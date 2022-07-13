@@ -19,6 +19,10 @@ export class SidebarComponent implements OnInit {
     
   }
 
+  BuscarDelHistorial(parametro:string):void{
+    this.gifService.obtenerGifs(parametro)
+  }
+
 
 
 }

@@ -1,3 +1,13 @@
-<div class="col">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ex odio architecto sunt porro consequatur odit modi eveniet eligendi expedita distinctio, temporibus ut ea esse id adipisci. Vero, soluta aut.
-  </div>
+<div class="row">
+  <div *ngFor="let gifs of resultados"
+        class="col-md-4 col-sm-6">
+    <div class="card">
+      <img class="card-img-top" [src]="gifs.images.downsized_medium.url" [alt]="gifs.title">
+      <div class="card-body">
+        <div class="card-text">
+          {{gifs.title}}
+        </div>
+      </div>
+    </div>
+  </div>   
+</div>
